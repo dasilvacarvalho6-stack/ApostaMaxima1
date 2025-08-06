@@ -1,5 +1,35 @@
 
 [
-  {"id": "1", "dia": "Segunda-feira", "time1": "Flamengo", "time2": "Palmeiras", "horario": "20:00", "odd": 1.95},
-  {"id": "2", "dia": "Terça-feira", "time1": "Barcelona", "time2": "Real Madrid", "horario": "17:00", "odd": 2.10}
+    {
+        "dia": "Segunda-feira",
+        "liga": "Brasileirão Série A",
+        "jogos": [
+            {
+                "timeCasa": "Flamengo",
+                "timeFora": "Palmeiras",
+                "horario": "20:00",
+                "mercados": {
+                    "1x2": {"1": 1.55, "X": 3.40, "2": 5.00},
+                    "Dupla Chance": {"1X": 1.20, "12": 1.35, "X2": 1.80},
+                    "Ambos Marcam": {"Sim": 1.75, "Não": 2.10}
+                }
+            }
+        ]
+    },
+    {
+        "dia": "Terça-feira",
+        "liga": "La Liga",
+        "jogos": [
+            {
+                "timeCasa": "Barcelona",
+                "timeFora": "Real Madrid",
+                "horario": "18:00",
+                "mercados": {
+                    "1x2": {"1": 2.10, "X": 3.00, "2": 3.30},
+                    "Dupla Chance": {"1X": 1.40, "12": 1.60, "X2": 1.90},
+                    "Ambos Marcam": {"Sim": 1.65, "Não": 2.25}
+                }
+            }
+        ]
+    }
 ]

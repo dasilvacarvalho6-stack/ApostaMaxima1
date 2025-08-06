@@ -18,31 +18,20 @@
 
     <div class="container">
         <aside class="sidebar">
-            <h3>Esportes</h3>
-            <ul>
-                <li onclick="filtrarCampeonato('futebol')">Futebol</li>
-                <li onclick="filtrarCampeonato('tenis')">Tênis</li>
-                <li onclick="filtrarCampeonato('basquete')">Basquete</li>
-            </ul>
+            <h3>Dias da Semana</h3>
+            <ul id="dias-lista"></ul>
         </aside>
 
         <main class="content">
-            <h2>Jogos em destaque</h2>
-            <div id="jogos">
-                <div class="jogo" onclick="abrirJogo('flamengo_x_palmeiras.html')">
-                    <span>Flamengo x Palmeiras</span>
-                    <div class="odds"><span>1.50</span> <span>3.40</span> <span>4.20</span></div>
-                </div>
-                <div class="jogo" onclick="abrirJogo('barcelona_x_real.html')">
-                    <span>Barcelona x Real Madrid</span>
-                    <div class="odds"><span>2.00</span> <span>3.10</span> <span>3.00</span></div>
-                </div>
-            </div>
+            <h2 id="titulo-dia">Jogos</h2>
+            <div id="lista-jogos"></div>
         </main>
 
         <aside class="boletim">
             <h3>Boletim de Apostas</h3>
-            <p>Nenhuma aposta selecionada</p>
+            <div id="boletim-apostas">
+                <p>Nenhuma aposta selecionada</p>
+            </div>
         </aside>
     </div>
 

@@ -7,7 +7,7 @@ body {
 }
 
 .topbar {
-    background-color: #000000;
+    background-color: #000;
     padding: 10px 20px;
     display: flex;
     justify-content: space-between;
@@ -41,8 +41,9 @@ body {
 
 .sidebar {
     width: 200px;
-    background-color: #111111;
+    background-color: #1a1a1a;
     padding: 20px;
+    overflow-y: auto;
 }
 
 .sidebar h3 {
@@ -67,29 +68,34 @@ body {
     overflow-y: auto;
 }
 
-.content h2 {
-    color: #e50914;
-}
-
 .jogo {
     background-color: #222;
     padding: 10px;
     margin: 10px 0;
-    cursor: pointer;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    border-radius: 4px;
+}
+
+.jogo h4 {
+    margin: 0 0 5px;
+    color: #e50914;
+}
+
+.mercado {
+    margin: 5px 0;
 }
 
 .odds span {
-    margin: 0 5px;
+    display: inline-block;
     background-color: #e50914;
+    margin: 2px;
     padding: 5px 10px;
     border-radius: 4px;
+    cursor: pointer;
 }
 
 .boletim {
     width: 250px;
-    background-color: #111111;
+    background-color: #1a1a1a;
     padding: 20px;
+    overflow-y: auto;
 }
