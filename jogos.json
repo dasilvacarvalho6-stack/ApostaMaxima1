@@ -1,0 +1,5 @@
+
+[
+  {"id": "1", "dia": "Segunda-feira", "time1": "Flamengo", "time2": "Palmeiras", "horario": "20:00", "odd": 1.95},
+  {"id": "2", "dia": "Terça-feira", "time1": "Barcelona", "time2": "Real Madrid", "horario": "17:00", "odd": 2.10}
+]

@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Pagamento - ApostaMáxima</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Pagamento</h1>
+    <p>Valor da Aposta: R$ <span id="valor"></span></p>
+    <p>Odds Totais: <span id="odds"></span></p>
+    <p>Retorno Potencial: R$ <span id="retorno"></span></p>
+
+    <h2>Escolha o método de pagamento:</h2>
+    <button onclick="gerarPix()">Pagar com Pix</button>
+    <button onclick="gerarCodigoDinheiro()">Gerar código para pagamento em dinheiro</button>
+
+    <p id="codigo-pagamento"></p>
+
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const valor = parseFloat(urlParams.get("valor") || 0);
+        const odds = parseFloat(urlParams.get("odds") || 0);
+
+        document.getElementById("valor").textContent = valor.toFixed(2);
+        document.getElementById("odds").textContent = odds.toFixed(2);
+        document.getElementById("retorno").textContent = (valor * odds).toFixed(2);
+
+        function gerarPix() {
+            document.getElementById("codigo-pagamento").textContent = "Chave Pix: apostas@maxima.com";
+        }
+
+        function gerarCodigoDinheiro() {
+            const codigo = "DIN" + Math.floor(Math.random() * 1000000);
+            document.getElementById("codigo-pagamento").textContent = "Código para pagamento em dinheiro: " + codigo;
+        }
+    </script>
+</body>
+</html>
